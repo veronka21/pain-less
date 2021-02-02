@@ -1,0 +1,11 @@
+.jumbotron {
+    background-image: url('../../images/main-bg.jpg');
+    background-size: 100% 100%;
+    
+    padding-top: 6%;
+    padding-bottom: 30%;
+}
+
+.body {
+    background: #e6e6e6;
+}
