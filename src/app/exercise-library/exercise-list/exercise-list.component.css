@@ -4,10 +4,11 @@
     position: relative;
     height: 80%;
     max-height: 80%;
-    width:80%; /* or whatever width you want. */
-    max-width:90%; /* or whatever width you want. */
+    width:85%;
+    max-width:90%;
     border: #44acaa 3px;
     border-style: ridge;
+    margin: auto;
 }
 
 .flexbox {
