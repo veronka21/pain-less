@@ -1,1 +1,5 @@
-<p>exercise-list works!</p>
+<div class="container-fluid background flexbox">
+    <app-exercise 
+        *ngFor="let exercise of exercises"
+        [exercise]="exercise"></app-exercise>
+</div>
