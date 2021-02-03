@@ -42,6 +42,7 @@
     position: absolute;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
+    transform: rotateX(0deg);
     -o-backface-visibility: hidden;
     backface-visibility: hidden;
     -webkit-transform: rotateY( 180deg );
@@ -58,6 +59,7 @@
     position: absolute;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
+    transform: rotateX(0deg);
     -o-backface-visibility: hidden;
     backface-visibility: hidden;
 }
