@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Exercise } from 'src/app/shared/exercise.model';
 
 @Component({
   selector: 'app-exercise',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./exercise.component.css']
 })
 export class ExerciseComponent implements OnInit {
+  @Input() exercise!: Exercise;
 
   constructor() { }
 
