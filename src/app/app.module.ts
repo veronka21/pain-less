@@ -9,6 +9,7 @@ import { HeaderComponent } from './header/header.component';
 import { ExerciseLibraryComponent } from './exercise-library/exercise-library.component';
 import { ExerciseListComponent } from './exercise-library/exercise-list/exercise-list.component';
 import { ExerciseComponent } from './exercise-library/exercise-list/exercise/exercise.component';
+import { ExerciseService } from './services/exercise.service';
 
 const appRoutes : Routes = [
   { path: '', component: HomeComponent },
@@ -29,7 +30,7 @@ const appRoutes : Routes = [
     AppRoutingModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [ExerciseService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
