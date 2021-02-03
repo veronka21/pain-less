@@ -1,6 +1,11 @@
-<div class="card">
-    <div>
-        <h5>{{ exercise.name }}</h5>
-        <img class="card-image" src="{{ exercise.imagePath }}" alt="{{ exercise.imagePath }}">
+<div class="slot">
+    <div class="card" [ngClass]="{flipped: flipped === true}" (contextmenu)="flipCard()">
+        <div class="front">
+            <h5>{{ exercise.name }}</h5>
+            <img class="card-image" src="{{ exercise.imagePath }}" alt="{{ exercise.imagePath }}">
+        </div>
+        <div class="back">
+            {{ exercise.description }}
+        </div>
     </div>
 </div>
