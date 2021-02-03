@@ -1,0 +1,25 @@
+.card {
+    display: block;
+    text-align: center;
+    box-shadow: 10px 10px 43px -18px rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+    height: 220px;
+    width: 300px;
+    cursor: pointer;
+    position: relative;
+    margin: 3%;
+    padding: 10px 10px 1px 10px;
+}
+
+.card-image {
+    max-width: 250px;
+    min-height: 140px;
+    max-height: 140px;
+}
+
+.card:hover {
+    scale: 105%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    transform: scale(1.02);
+}
+
