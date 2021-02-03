@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ExerciseService } from 'src/app/services/exercise.service';
+import { Exercise } from 'src/app/shared/exercise.model';
 
 @Component({
   selector: 'app-exercise-list',
@@ -6,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./exercise-list.component.css']
 })
 export class ExerciseListComponent implements OnInit {
+  exercises?: Exercise[];
+  exerciseService : ExerciseService;
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor(exerciseService: ExerciseService) { 
+    this.exerciseService = exerciseService;
   }
 
+  ngOnInit(): void {
+    this.exercises = this.exerciseService.getExercises();
+  }
 }
