@@ -1,3 +1,3 @@
 export class Exercise {
-    constructor(public id: number, public name: string, public description: string, public imagePath: string) {}
+    constructor(public id: string, public name: string, public description: string, public gifUrl: string) {}
 }
