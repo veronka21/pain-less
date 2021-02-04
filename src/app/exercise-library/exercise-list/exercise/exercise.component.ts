@@ -16,8 +16,8 @@ export class ExerciseComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  flipCard() {
-    event?.preventDefault();
+  flipCard(event : Event) {
+    event.preventDefault();
     this.flipped = !this.flipped;
   }
 

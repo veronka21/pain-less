@@ -1,5 +1,5 @@
 <div class="slot">
-    <div class="card" [ngClass]="{flipped: flipped === true}" (contextmenu)="flipCard()">
+    <div class="card" [ngClass]="{flipped: flipped === true}" (contextmenu)="flipCard($event)">
         <div class="front">
             <h5>{{ exercise.name }}</h5>
             <img class="card-image" src="{{ backendMainUrl + exercise.gifUrl }}" alt="{{ backendMainUrl + exercise.gifUrl }}">
