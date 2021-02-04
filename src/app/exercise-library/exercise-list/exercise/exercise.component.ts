@@ -9,6 +9,7 @@ import { Exercise } from 'src/app/shared/exercise.model';
 export class ExerciseComponent implements OnInit {
   @Input() exercise!: Exercise;
   flipped: boolean = false;
+  backendMainUrl : string = 'http://localhost:8762/exercise/';
 
   constructor() { }
 
