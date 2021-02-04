@@ -8,7 +8,7 @@ import { Exercise } from 'src/app/shared/exercise.model';
   styleUrls: ['./exercise-list.component.css']
 })
 export class ExerciseListComponent implements OnInit {
-  exercises?: Exercise[];
+  exercises!: Exercise[];
   exerciseService : ExerciseService;
 
   constructor(exerciseService: ExerciseService) { 
@@ -16,6 +16,7 @@ export class ExerciseListComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.exercises = this.exerciseService.getExercises();
+    this.exerciseService.getAllExercisesFromApi()
+      .subscribe(response => this.exercises = response);
   }
 }
