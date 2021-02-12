@@ -9,10 +9,8 @@ import { Exercise } from 'src/app/shared/exercise.model';
 })
 export class ExerciseListComponent implements OnInit {
   exercises!: Exercise[];
-  exerciseService : ExerciseService;
 
-  constructor(exerciseService: ExerciseService) { 
-    this.exerciseService = exerciseService;
+  constructor(private exerciseService: ExerciseService) { 
   }
 
   ngOnInit(): void {
