@@ -8,7 +8,7 @@ import { Exercise } from 'src/app/shared/exercise.model';
   styleUrls: ['./exercise-list.component.css']
 })
 export class ExerciseListComponent implements OnInit {
-  exercises!: Exercise[];
+  exercises: Exercise[] = [];
 
   constructor(private exerciseService: ExerciseService) { 
   }
