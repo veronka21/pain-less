@@ -1,0 +1,15 @@
+.background {
+    background-image: url('../../assets/images/wp-bg.jpg');
+    background-attachment: fixed;
+    min-height: 90vh;
+    min-width: 90vw;
+    background-size: 100% 100%;
+
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+
+h2 {
+    margin: 3%;
+    text-shadow: -1px 0 #62c1bf, 0 1px #62c1bf, 1px 0 #62c1bf, 0 -1px #62c1bf;
+}
