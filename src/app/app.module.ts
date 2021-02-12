@@ -11,10 +11,12 @@ import { ExerciseLibraryComponent } from './exercise-library/exercise-library.co
 import { ExerciseListComponent } from './exercise-library/exercise-list/exercise-list.component';
 import { ExerciseComponent } from './exercise-library/exercise-list/exercise/exercise.component';
 import { ExerciseService } from './services/exercise.service';
+import { WorkoutPlansComponent } from './workout-plans/workout-plans.component';
 
 const appRoutes : Routes = [
   { path: '', component: HomeComponent },
-  { path: 'exercise-library', component: ExerciseLibraryComponent }
+  { path: 'exercise-library', component: ExerciseLibraryComponent },
+  { path: 'workout-plans', component: WorkoutPlansComponent },
 ]
 
 @NgModule({
@@ -24,7 +26,8 @@ const appRoutes : Routes = [
     HeaderComponent,
     ExerciseLibraryComponent,
     ExerciseListComponent,
-    ExerciseComponent
+    ExerciseComponent,
+    WorkoutPlansComponent
   ],
   imports: [
     BrowserModule,
