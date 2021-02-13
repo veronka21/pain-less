@@ -12,6 +12,7 @@ import { ExerciseListComponent } from './exercise-library/exercise-list/exercise
 import { ExerciseComponent } from './exercise-library/exercise-list/exercise/exercise.component';
 import { ExerciseService } from './services/exercise.service';
 import { WorkoutPlansComponent } from './workout-plans/workout-plans.component';
+import { LoadingComponent } from './loading/loading.component';
 
 const appRoutes : Routes = [
   { path: '', component: HomeComponent },
