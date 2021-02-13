@@ -11,6 +11,7 @@ import { ExerciseLibraryComponent } from './exercise-library/exercise-library.co
 import { ExerciseListComponent } from './exercise-library/exercise-list/exercise-list.component';
 import { ExerciseComponent } from './exercise-library/exercise-list/exercise/exercise.component';
 import { ExerciseService } from './services/exercise.service';
+import { LoadingComponent } from './loading/loading.component';
 
 const appRoutes : Routes = [
   { path: '', component: HomeComponent },
@@ -24,7 +25,8 @@ const appRoutes : Routes = [
     HeaderComponent,
     ExerciseLibraryComponent,
     ExerciseListComponent,
-    ExerciseComponent
+    ExerciseComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,
