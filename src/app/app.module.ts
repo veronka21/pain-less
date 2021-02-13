@@ -28,7 +28,8 @@ const appRoutes : Routes = [
     ExerciseLibraryComponent,
     ExerciseListComponent,
     ExerciseComponent,
-    WorkoutPlansComponent
+    WorkoutPlansComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,
