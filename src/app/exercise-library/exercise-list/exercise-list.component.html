@@ -1,11 +1,11 @@
-<div class="container-fluid background flexbox">
-    <div *ngIf="exercises.length > 0; else errorText">
-        <app-exercise 
-            *ngFor="let exercise of exercises"
-            [exercise]="exercise"></app-exercise>
-    </div>
-    <ng-template #errorText>
+<div class="container-fluid background flexbox" *ngIf="exercises.length > 0; else errorText">
+    <app-exercise 
+        *ngFor="let exercise of exercises"
+        [exercise]="exercise"></app-exercise>
+</div>
+<ng-template #errorText>
+    <div class="container-fluid background flexbox" >
         <h4>Sorry, but the required content can't be loaded right now... :(</h4>
         <img src="../../../assets/images/crying.gif" alt="no content crying kid meme">
-    </ng-template>
-</div>
+    </div>
+</ng-template>
