@@ -3,10 +3,17 @@
     -moz-perspective: 800px;
     -o-perspective: 800px;
     perspective: 800px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
-    display: block;
+    opacity: 100% !important;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
     text-align: center;
     box-shadow: 10px 10px 43px -18px rgba(0, 0, 0, 0.75);
     border-radius: 5px;
