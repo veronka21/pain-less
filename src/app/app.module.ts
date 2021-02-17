@@ -13,6 +13,8 @@ import { ExerciseComponent } from './exercise-library/exercise-list/exercise/exe
 import { ExerciseService } from './services/exercise.service';
 import { WorkoutPlansComponent } from './workout-plans/workout-plans.component';
 import { LoadingComponent } from './loading/loading.component';
+import { WorkoutPlanListComponent } from './workout-plans/workout-plan-list/workout-plan-list.component';
+import { WorkoutPlanDetailsComponent } from './workout-plans/workout-plan-details/workout-plan-details.component';
 
 const appRoutes : Routes = [
   { path: '', component: HomeComponent },
@@ -29,7 +31,9 @@ const appRoutes : Routes = [
     ExerciseListComponent,
     ExerciseComponent,
     WorkoutPlansComponent,
-    LoadingComponent
+    LoadingComponent,
+    WorkoutPlanListComponent,
+    WorkoutPlanDetailsComponent
   ],
   imports: [
     BrowserModule,
