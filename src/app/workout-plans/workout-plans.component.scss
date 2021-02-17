@@ -13,3 +13,11 @@ h2 {
     margin: 3%;
     text-shadow: -1px 0 #62c1bf, 0 1px #62c1bf, 1px 0 #62c1bf, 0 -1px #62c1bf;
 }
+
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
