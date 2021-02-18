@@ -7,7 +7,8 @@ import { Exercise } from "../shared/exercise.model";
 
 @Injectable()
 export class ExerciseService {
-    private apiMainUrl : string = "http://localhost:8762/exercise"
+    // private apiMainUrl : string = "http://localhost:8762/exercise"
+    private apiMainUrl : string = "https://pain-less-backend.herokuapp.com/exercise"
 
     constructor(private http: HttpClient) {}
     
