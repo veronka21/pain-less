@@ -1,3 +1,17 @@
 <div class="background">
-    <p>workout-plan-list works!</p>
+    <app-loading *ngIf="loading; else content"></app-loading>
+
+    <ng-template #content>
+        <div *ngIf="workouts.length > 0; else errorText">
+            <div *ngFor="let workout of workouts" class="workout-card">
+                <p>{{ workout.name }}</p>
+            </div>
+        </div>
+        <ng-template #errorText>
+            <div class="container-fluid background flexbox" >
+                <h4>Sorry, but the required content can't be loaded right now... :(</h4>
+                <img src="../../../assets/images/crying.gif" alt="no content crying kid meme">
+            </div>
+        </ng-template>
+    </ng-template>
 </div>

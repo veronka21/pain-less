@@ -1,7 +1,7 @@
 <div class="container-fluid background">
     <h2>Workout plans:</h2>
     <div class="fluid-container flexbox">
-        <app-workout-plan-list></app-workout-plan-list>
+        <app-workout-plan-list [workouts]="workouts" [loading]="loading"></app-workout-plan-list>
         <app-workout-plan-details></app-workout-plan-details>
     </div>
 </div>
